@@ -1,0 +1,69 @@
+//VARIABLE STYLES
+$primary: #0c5f4c; //Spruce
+$secondary: #063974; //Twilight blue
+$primary-background: #fafffe; //Ice blue
+$secondary-background: #d2f9f1; //Light light blue
+$text: #2c2c2c; //Black
+$decoration: #50e3c2; // Greenish cyan
+$primary-font: 'Lato', sans-serif; //heading, body
+$secondary-font: 'Playfair Display SC', serif; //main heading, logo, nav
+
+
+@mixin headers($color, $size-value, $size-weight) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: $size-value;
+  font-weight: $size-weight;
+}
+
+@mixin font-size($size-value){
+  font-size: $size-value * 1px;
+  font-size: ($size-value/20) * 1rem;
+}
+
+//BASE STYLES
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: $primary-font;
+  background: $primary-background;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  color: #000;
+  font-family: $primary-font;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-background;
+  display: inline-block
+  &:visited {
+    display: none;
+  }
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}

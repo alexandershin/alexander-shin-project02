@@ -1,0 +1,59 @@
+header {
+  background: url(../assets/home-image-1.jpg) no-repeat;
+  height: 100vh;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h2 {
+  // display: flex;
+  // align-items: center;
+  color: $decoration;
+  font-family: $secondary-font;
+  font-style: italic;
+  font-size: 1.73rem;
+  font-weight: 900;
+  // padding-top: 50px;
+}
+
+nav {
+  display: flex;
+  ul {
+    font-family: $primary-font;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 29px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    li {
+      padding-left: 60px;
+    }
+  }
+}
+
+.head-title h1 {
+  @include headers($primary, 3.1rem, 700);
+  line-height: 58px;
+  letter-spacing: 6.7px;
+}
+
+.main-title {
+  @include headers($secondary, 5.56rem, 400);
+  font-family: $secondary-font;
+  font-style: italic;
+}
+
