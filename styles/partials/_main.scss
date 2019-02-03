@@ -12,8 +12,10 @@
 }
 
 .visit-text {
-  width: calc(60% - 100px);
+  width: calc(70% - 100px);
   margin-right: 100px;
+  // width: 70%;
+  // padding-right: 50px;
   h2 {
     @include headers($primary, 1.75rem, 400)
     line-height: 58px; 
@@ -22,23 +24,10 @@
 }
 
 .visit-image {
-  width: 40%;
-  // margin-left: 30px;
-  padding: 0 0 0 100px;
-  // display: flex;
-  // justify-content: flex-start;
-  // align-items: flex-start;
-  // position: relative;
-    // padding: 0 0px 0px 100px;
-
+  width: 30%;
+  padding-left: 50px;
   img {
-    // padding: 0 0px 0px 100px;
     box-shadow: -20px 20px 0 $decoration;
-    // transform: translate(0px, -20px);
-    // position: relative;
-    // top: -20px;
-    // right: 0px;
-
   }
 }
 
@@ -79,6 +68,11 @@
 }
 
 //ABOUT SECTION STYLES
+.about {
+  // margin: 100px 0;
+  padding: 100px 0;
+}
+
 .about-container {
   display: flex;
   flex-flow: row wrap;
@@ -87,10 +81,72 @@
 .about-box {
   width: 50%;
   display: flex;
+  // align-items: center;
 }
 
-//LOCATION SECTION STYLES
+.about-icon {
+  padding-top: 5px;
+}
+
+.fas {
+  color: $primary-background;
+  background: $decoration;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.about-text {
+  color: $primary;
+  h2 {
+    font-family: $primary-font;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 58px;
+    letter-spacing: 3.2px;
+  }
+}
+
+//NEW LOCATIONS STYLES
 .location {
   background: $secondary-background;
   padding: 100px 0;
+}
+
+.location-container1 {
+  display: flex;
+  flex-flow: row wrap;
+  // position: relative;
+  // justify-content: space-between;
+}
+
+.location-container2 {
+  display: flex;
+  flex-flow: row-reverse wrap;
+}
+
+.location-box {
+  width: calc(50%);
+}
+
+.location-image1 {
+  // position: absolute;
+}
+
+.location-text1,
+.location-text2 {
+  padding: 0 100px;
+
+  // margin-left: 100px;
+}
+
+// FREE TRIP STYLES
+.free-trip {
+  background: url(../assets/banner-image.jpg) no-repeat;
+  background-size: cover;
 }
