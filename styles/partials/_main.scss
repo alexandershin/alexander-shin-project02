@@ -17,7 +17,7 @@
   // width: 70%;
   // padding-right: 50px;
   h2 {
-    @include headers($primary, 1.75rem, 400)
+    @include headers($primary, $primary-font, 1.75rem, 400)
     line-height: 58px; 
     letter-spacing: 3.8px;
   }
@@ -115,38 +115,98 @@
 //NEW LOCATIONS STYLES
 .location {
   background: $secondary-background;
+  position: relative;
   padding: 100px 0;
 }
+
 
 .location-container1 {
   display: flex;
   flex-flow: row wrap;
+  justify-content: flex-end;
   // position: relative;
-  // justify-content: space-between;
+  // padding-top: 60px;
+
 }
 
 .location-container2 {
   display: flex;
   flex-flow: row-reverse wrap;
+  justify-content: flex-end;
+  position: relative;
+  text-align: right;
 }
 
 .location-box {
-  width: calc(50%);
+  width: 50%;
 }
 
 .location-image1 {
-  // position: absolute;
+  position: absolute;
+  left: 0;
+  top: -30px;
+  width: 43%;
+  img {
+    box-shadow: 20px 20px 0 $decoration;
+  }
 }
 
-.location-text1,
-.location-text2 {
-  padding: 0 100px;
+.location-image2 {
+  position: absolute;
+  right: 0;
+  top: 120px;
+  width: 43%;
+  img {
+    box-shadow: -20px 20px 0 $decoration;
+  }
+}
 
+.location-text1 h2,
+.location-text2 h2 {
+  @include headers($secondary, $primary-font, 1.75rem, bold);
+  Line-height: 58px; 
+  letter-spacing: 3.8px;
+  
+}
+
+.location-text1 {
+  padding: 0 100px;
+  padding-bottom: 60px;
   // margin-left: 100px;
 }
 
+.location-text2 {
+  padding: 0 100px;
+  padding-top: 80px;
+}
+
 // FREE TRIP STYLES
-.free-trip {
-  background: url(../assets/banner-image.jpg) no-repeat;
+.beach-aerial {
+  background: url(../assets/banner-image.jpg) no-repeat center;
   background-size: cover;
+  height: 60vh;
+}
+
+.free-trip {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: 150px 100px;
+  h2 {
+    @include headers($primary, $primary-font, 1.75rem, 400)
+    line-height: 58px; 
+    letter-spacing: 3.8px;
+  }
+}
+
+footer {
+  background: #2c2c2c;
+  p {
+    padding: 5px 0;
+    color: #fafffe;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+  }
 }

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blog</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display+SC:400,900i" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/blog.css">
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="top-header">
+        <!-- LOGO STARTS -->
+        <div class="logo">
+          <h2>Beachstays</h2>
+        </div>
+        <!-- LOGO ENDS -->
+        <!-- NAV STARTS -->
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- NAV ENDS -->
+      </div>
+      <div class="blog-title">
+        <h1>Blog</h1>
+      </div>
+      <!-- HEAD TITLE ENDS -->
+    </div>
+  </header>
+
+  <section>
+    <!-- <div class="blog-post-image">
+      <img src="assets/post-image.jpg" alt="a walkway leading to a blue house with the lights on">
+    </div> -->
+    <div class="blog-post">
+      <div class="blog-post-container">
+        <div class="blog-post-image">
+          <img src="assets/post-image.jpg" alt="a walkway leading to a blue house with the lights on">
+        </div>
+        <div class="blog-post-text">
+          <h2>Five days of ocean seas</h2>
+          <p class="date">Monday January 21st, 2019 by <span>Bora</span></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid delectus asperiores sapiente, natus aliquam itaque eius facere quia iusto ex dolore deleniti quis, labore rerum culpa ducimus aut provident inventore voluptatibus incidunt ratione, distinctio accusantium.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eligendi delectus consequatur illum fugit, explicabo sit error ea est atque ut, asperiores nisi ex. Quod nihil possimus, tenetur dignissimos id consectetur. Exercitationem, molestias quaerat cum iste debitis facere. Laudantium, officia!</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint rerum molestiae aut ratione amet, odio nam animi, voluptates totam provident autem molestias laborum et, perferendis ducimus iure doloribus quibusdam non quo illum velit unde nisi deleniti neque? Ex molestiae excepturi quo voluptates voluptate voluptatem inventore atque nesciunt nulla obcaecati. Vel.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, repellat sapiente ipsum ex non consectetur dignissimos facilis beatae asperiores quasi esse culpa, saepe, nihil quidem!</p>
+        </div>
+      </div>
+      <aside>
+        <div class="mission-container">
+          <div class="mission">
+            <img src="assets/sidebar-image.jpg" alt="view of home built on top of waters">
+          </div>
+          <div class="mission-text">
+            <p class="mission-title">Our mission</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eum quos earum.</p>
+          <div class="more-info">
+            <a href="#more">Find Out More</a>
+          </div>
+          </div>
+          <div class="recent">
+            <p class="mission-title">Recent Posts</p>
+            <ul>
+              <li><a href="#post1">Lorem ipsum dolor sit</a></li>
+              <li><a href="#post2">Sint rerum molestiae aut</a></li>
+              <li><a href="#post3">Quisquam eligendi delectus</a></li>
+              <li><a href="#post4">Aliquid delectus asperiores</a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- COMMENTS SECTION STARTS -->
+  <section class="comments">
+    <h2>Comments:</h2>
+    <div class="comment-box">
+      <div class="comment-box-image">
+        <img src="assets/comment-image.jpg" alt="profile picture of a man in front of a dark wood background ">
+      </div>
+      <div class="comment-box-text">
+        <p>Tuesday October 9th, 2019 by Reyansh</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero fuga esse doloribus maiores voluptatem enim repellat porro. Iure ullam beatae magnam corrupti vel molestias voluptatem sunt, maiores, deleniti animi adipisci.</p>
+      </div>
+    </div>
+    <div class="comment-box comment-box1">
+      <div class="comment-box-image">
+        <img src="assets/comment-image2.jpg" alt="profile picture of a woman with sunglasses on with greenery in the background">
+      </div>
+      <div class="comment-box-text">
+        <p>Wednesday October 10th, 2019 by Olivia</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, nam ex. Eum rem vero, amet minus ut non!</p>
+      </div>
+    </div>
+
+    <form action="#" method="POST" name="comment" class="comment" autocomplete="off">
+      <div class="form-container">
+        <div class="form-name-container">
+          <label for="name" class=""></label>
+          <input type="text" name="name" placeholder="Name" id="name" class="form-name">
+        </div>
+        <div class="form-email-container">
+          <label for="email"></label>
+          <input type="email" name="email" placeholder="Email address" id="email" class="form-email">
+        </div>
+      </div>
+
+      <div class="form-bottom">
+        <label for="comment"></label>
+        <input type="text" placeholder="Comment" id="comment" class="form-comment">
+      </div>
+
+
+      <input type="submit" id="submit" name="submit" value="Post Comment" class="more-info">
+
+<!-- 
+      <input type="submit" id="subscribe" name="subscribe" value="Subscribe"> -->
+    </form>
+  </section>
+  <!-- COMMENTS SECTION ENDS -->
+
+  <footer>
+    <div class="copyright">
+      <p>Copyright &copy; 2019 HackerYou</p>
+    </div>
+  </footer>
+</body>
+</html>

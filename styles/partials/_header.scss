@@ -63,7 +63,7 @@ nav {
 }
 
 .main-title1 {
-  @include headers($primary, 3.1rem, 700);
+  @include headers($primary, $primary-font, 3.1rem, 700);
   line-height: 58px;
   letter-spacing: 6.7px;
   padding-left: 10px;
@@ -71,8 +71,7 @@ nav {
 }
 
 .main-title2 {
-  @include headers($secondary, 5.56rem, 400);
-  font-family: $secondary-font;
+  @include headers($secondary, $secondary-font, 5.56rem, 400);
   font-style: italic;
   line-height: 58px;
 }

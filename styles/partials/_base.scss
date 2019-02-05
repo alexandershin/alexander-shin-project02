@@ -9,9 +9,9 @@ $primary-font: 'Lato', sans-serif; //heading, body
 $secondary-font: 'Playfair Display SC', serif; //main heading, logo, nav
 
 
-@mixin headers($color, $size-value, $size-weight) {
+@mixin headers($color, $font-value, $size-value, $size-weight) {
   color: $color;
-  font-family: $primary-font;
+  font-family: $font-value;
   font-size: $size-value;
   font-weight: $size-weight;
 }
@@ -62,6 +62,10 @@ a {
   &:visited {
     display: none;
   }
+}
+
+img {
+  display: block;
 }
 
 .wrapper {
