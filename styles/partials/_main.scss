@@ -1,21 +1,13 @@
 //VISIT GUYANA STYLES
-.visit {
-  // background: $secondary-background;
-
-}
-
 .visit-container {
   display: flex;
   padding: 200px 0 100px 0;
   justify-content: space-between;
-
 }
 
 .visit-text {
   width: calc(70% - 100px);
   margin-right: 100px;
-  // width: 70%;
-  // padding-right: 50px;
   h2 {
     @include headers($primary, $primary-font, 1.75rem, 400)
     line-height: 58px; 
@@ -32,14 +24,12 @@
 }
 
 .more-info {
-  a {
-    background-color: $secondary;
-    font-family: $secondary-font;
-    font-style: italic;
-    line-height: 32px;
-    letter-spacing: 1px;
-    padding: 10px 15px;
-  }
+  background-color: $secondary;
+  font-family: $secondary-font;
+  font-style: italic;
+  line-height: 32px;
+  letter-spacing: 1px;
+  padding: 10px 15px;
 }
 
 //GALLERY WALL STYLES
@@ -69,7 +59,6 @@
 
 //ABOUT SECTION STYLES
 .about {
-  // margin: 100px 0;
   padding: 100px 0;
 }
 
@@ -81,24 +70,22 @@
 .about-box {
   width: 50%;
   display: flex;
-  // align-items: center;
 }
 
 .about-icon {
   padding-top: 5px;
-}
-
-.fas {
-  color: $primary-background;
-  background: $decoration;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  margin-right: 20px;
-  width: 50px;
-  height: 50px;
+  .fas {
+    color: $primary-background;
+    background: $decoration;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .about-text {
@@ -115,18 +102,19 @@
 //NEW LOCATIONS STYLES
 .location {
   background: $secondary-background;
-  position: relative;
-  padding: 100px 0;
+  padding: 25px 0;
 }
 
+.location-box {
+  width: 50%;
+}
 
 .location-container1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
-  // position: relative;
-  // padding-top: 60px;
-
+  position: relative;
+  padding-bottom: 150px;
 }
 
 .location-container2 {
@@ -137,14 +125,10 @@
   text-align: right;
 }
 
-.location-box {
-  width: 50%;
-}
-
 .location-image1 {
   position: absolute;
   left: 0;
-  top: -30px;
+  top: -70px;
   width: 43%;
   img {
     box-shadow: 20px 20px 0 $decoration;
@@ -154,7 +138,7 @@
 .location-image2 {
   position: absolute;
   right: 0;
-  top: 120px;
+  bottom: -70px;
   width: 43%;
   img {
     box-shadow: -20px 20px 0 $decoration;
@@ -166,18 +150,14 @@
   @include headers($secondary, $primary-font, 1.75rem, bold);
   Line-height: 58px; 
   letter-spacing: 3.8px;
-  
 }
 
 .location-text1 {
-  padding: 0 100px;
-  padding-bottom: 60px;
-  // margin-left: 100px;
+  padding: 80px 120px 0 110px;
 }
 
 .location-text2 {
-  padding: 0 100px;
-  padding-top: 80px;
+  padding: 0px 110px 60px 120px;
 }
 
 // FREE TRIP STYLES
@@ -185,6 +165,7 @@
   background: url(../assets/banner-image.jpg) no-repeat center;
   background-size: cover;
   height: 60vh;
+  max-height: 773px;
 }
 
 .free-trip {
@@ -199,14 +180,3 @@
   }
 }
 
-footer {
-  background: #2c2c2c;
-  p {
-    padding: 5px 0;
-    color: #fafffe;
-    font-size: 0.9rem;
-    font-weight: 300;
-    text-align: center;
-    margin: 0;
-  }
-}

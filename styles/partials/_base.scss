@@ -8,17 +8,12 @@ $decoration: #50e3c2; // Greenish cyan
 $primary-font: 'Lato', sans-serif; //heading, body
 $secondary-font: 'Playfair Display SC', serif; //main heading, logo, nav
 
-
+// MIXIN STYLES
 @mixin headers($color, $font-value, $size-value, $size-weight) {
   color: $color;
   font-family: $font-value;
   font-size: $size-value;
   font-weight: $size-weight;
-}
-
-@mixin font-size($size-value){
-  font-size: $size-value * 1px;
-  font-size: ($size-value/20) * 1rem;
 }
 
 //BASE STYLES
@@ -58,9 +53,13 @@ p {
 a {
   text-decoration: none;
   color: $primary-background;
-  display: inline-block
+  display: inline-block;
+  transition: all 0.3s;
   &:visited {
     display: none;
+  }
+  &:hover {
+    color: $decoration;
   }
 }
 
@@ -69,7 +68,12 @@ img {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
-  // width: 90%;
+  width: 80%;
+}
+
+.body-wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
 }

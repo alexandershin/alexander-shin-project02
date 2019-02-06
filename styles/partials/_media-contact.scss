@@ -1,0 +1,62 @@
+// CONTACT MEDIA QUERY STYLES
+@media(max-width: 1200px) {
+  nav {
+    ul {
+      text-align: left;
+      flex-flow: column;
+      display: flex;
+      align-items: flex-start;
+      padding-bottom: 30px;
+      li {
+        padding: 10px 0 10px 0;
+      }
+    }
+  }
+
+  .contact-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    h1 {
+      font-size: 3.8rem;
+    }
+  }
+
+  .contact-container {
+    flex-flow: column wrap;
+    width: 100%;
+  }
+  
+  .contact-form {
+    width: 80%;
+    display: block;
+    transform: translate(0, -150px);
+  }
+
+  .contact-info {
+    padding: 0;
+  }
+
+  .comment-box-text {
+    width: 100%;
+    padding: 0;
+    p:first-child {
+      margin: 0;
+      color: $secondary;
+      line-height: 1rem;
+    }
+  }
+
+  .form-container {
+    width: 90%;
+    display: block;
+    justify-content: space-between;
+  }
+
+  .form-name-container,
+  .form-email-container {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+}

@@ -1,52 +1,8 @@
-@import "partials/setup";
-@import "partials/base";
-
-header {
+// CONTACT STYLES
+.contact-header {
   background: url(../assets/contact-image-1.jpg) no-repeat top right;
-  // background-size: cover;
+  background-size: cover;
   height: 75vh;
-  // position: relative;
-}
-
-.top-header {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
-  // position: relative;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo h2 {
-  // display: flex;
-  // align-items: center;
-  color: $decoration;
-  font-family: $secondary-font;
-  font-style: italic;
-  font-size: 1.73rem;
-  font-weight: 900;
-  // padding-top: 50px;
-}
-
-nav {
-  display: flex;
-  ul {
-    font-family: $primary-font;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 29px;
-    letter-spacing: 1px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    li {
-      padding-left: 60px;
-    }
-  }
 }
 
 .contact-title {
@@ -59,7 +15,6 @@ nav {
     letter-spacing: 9px;
   }
 }
-
 
 // CONTACT POST STYLES
 .contact-container {
@@ -103,6 +58,10 @@ nav {
 
 }
 
+.form-bottom {
+  margin-bottom: 40px;
+}
+
 .form-comment {
   color: rgba(0,0,0,0.5);
   width: 100%;
@@ -112,16 +71,15 @@ nav {
   Letter-spacing: 2px;
   background: #fff;
   border: 2px solid $decoration;
-
 }
 
-.form-bottom {
-  margin-bottom: 40px;
-}
 
 input[type="submit"] {
   width: 100%;
-  // margin-bottom: 100px;
+  transition: all .3s;
+  &:hover {
+    color: $decoration;    
+  }
 }
 
 .more-info {
@@ -148,6 +106,10 @@ input[type="submit"] {
     padding-right: 20px;
     a {  
       color: $text;
+      transition: all .3s;
+      &:hover {
+        color: $decoration;
+      }
     }
   }
 }
@@ -160,49 +122,16 @@ input[type="submit"] {
   a {
     color: $text;
     font-weight: 700;
+    transition: all .3s;
+    padding: 20px 0;
+    line-height: 32px; 
+    Letter-spacing: 2px;
+    &:hover {
+      color: $decoration;
+    }
   }
   .address p {
     margin: 0;
   }
 }
 
-// FOOTER STYLES
-footer {
-  background: #2c2c2c;
-  p {
-    padding: 5px 0;
-    color: #fafffe;
-    font-size: 0.9rem;
-    font-weight: 300;
-    text-align: center;
-    margin: 0;
-  }
-}
-
-
-
-
-
-
-// DELETE BELOW
-
-
-.blog-post {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-}
-
-.blog-post-container {
-  width: 60%;
-  border-right: 5px solid $decoration;
-  border-bottom: 5px solid $decoration;
-}
-
-.blog-post-image {
-  transform: translate(0, -150px);
-  img {
-    box-shadow: 20px 20px 0 $decoration;
-    // transform: translate(10px, 0);
-  }
-}
